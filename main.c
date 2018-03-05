@@ -45,20 +45,32 @@ void	print_map(t_param param)
 	}
 }
 
+void	print_res(t_param *param)
+{
+	ft_printf("%d %d\n", param->res_y, param->res_x);
+	//ft_printf("{file}%d %d\n", 2, param->res_y, param->res_x);
+}
+
 int main(void)
 {
 	t_param	param;
-	int i;
+	//int 	i;
 
 	param.map.created = 0;
 	param.piece.p = NULL;
+	param.end = 0;
 	whoami(&param);
-	i = 0;
-	while (i < 3)
+	//i = 0;
+	while (!param.end)
 	{
 		parse_map(&param);
-		print_map(param);
-		i++;
+		play(&param);
+
+		if (!param.end)
+			print_res(&param);
+		//i++;
+		// debug
+		//print_map(*param);
 	}
 	return (0);
 }

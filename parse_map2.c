@@ -12,17 +12,6 @@
 
 #include "fillit.h"
 
-void	free_piece(t_param *param)
-{
-	int i;
-
-	i = 0;
-	while (i < param->piece.size_y)
-		free(param->piece.p[i++]);
-	free(param->piece.p);
-	param->piece.p = NULL;
-}
-
 void	create_piece(t_param *param)
 {
 	char	*buf;
@@ -57,13 +46,24 @@ void	parse_pline(t_param *param, int *i)
 	j = 0;
 	while (j < param->piece.size_x)
 	{
-		if (line[j] == '.')
-			param->piece.p[*i][j] = 0;
-		else
+		if (line[j] == '*')
 			param->piece.p[*i][j] = param->plr;
+		else
+			param->piece.p[*i][j] = 0;
 		j++;
 	}
 	(*i)++;
 	if (line)
 		ft_strdel(&line);
+}
+
+void	free_piece(t_param *param)
+{
+	int i;
+
+	i = 0;
+	while (i < param->piece.size_y)
+		free(param->piece.p[i++]);
+	free(param->piece.p);
+	param->piece.p = NULL;
 }

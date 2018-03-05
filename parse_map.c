@@ -18,7 +18,26 @@ void 	whoami(t_param *param)
 
 	get_next_line(0, &line);
 	param->plr = line[10] - '0';
+	param->enemy = param->plr == 1 ? 2 : 1;
 	ft_strdel(&line);
+}
+
+void	parse_map(t_param *param)
+{
+	int		i;
+
+	if (!param->map.created)
+		create_map(param);
+	else
+		gnl_continue();
+	gnl_continue();
+	i = 0;
+	while (i < param->map.size_y)
+		parse_mline(param, &i);
+	create_piece(param);
+	i = 0;
+	while (i < param->piece.size_y)
+		parse_pline(param, &i);
 }
 
 void 	create_map(t_param *param)
@@ -42,6 +61,14 @@ void 	create_map(t_param *param)
 	param->map.created = 1;
 }
 
+void	gnl_continue(void)
+{
+	char	*line;
+
+	if (get_next_line(0, &line) > 0)
+		ft_strdel(&line);
+}
+
 void	parse_mline(t_param *param, int *i)
 {
 	char	*line;
@@ -54,41 +81,15 @@ void	parse_mline(t_param *param, int *i)
 	j = 0;
 	while (j < param->map.size_x)
 	{
-		if (buf[j] == '.')
-			param->map.m[*i][j] = 0;
-		else if (buf[j] == 'O' || buf[j] == 'o')
+		if (buf[j] == 'O' || buf[j] == 'o')
 			param->map.m[*i][j] = 1;
-		else
+		else if (buf[j] == 'X' || buf[j] == 'x')
 			param->map.m[*i][j] = 2;
+		else
+			param->map.m[*i][j] = 0;
 		j++;
 	}
 	(*i)++;
 	if (line)
 		ft_strdel(&line);
-}
-
-void	gnl_continue()
-{
-	char	*line;
-
-	if (get_next_line(0, &line) > 0)
-		ft_strdel(&line);
-}
-
-void	parse_map(t_param *param)
-{
-	int		i;
-
-	if (!param->map.created)
-		create_map(param);
-	else
-		gnl_continue();
-	gnl_continue();
-	i = 0;
-	while (i < param->map.size_y)
-		parse_mline(param, &i);
-	create_piece(param);
-	i = 0;
-	while (i < param->piece.size_y)
-		parse_pline(param, &i);
 }

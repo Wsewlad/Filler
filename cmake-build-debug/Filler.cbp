@@ -96,6 +96,9 @@
 		<Unit filename="/Users/vfil/CLionProjects/Filler/parse_map2.c">
 			<Option target="Filler"/>
 		</Unit>
+		<Unit filename="/Users/vfil/CLionProjects/Filler/play.c">
+			<Option target="Filler"/>
+		</Unit>
 		<Unit filename="/Users/vfil/CLionProjects/Filler/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

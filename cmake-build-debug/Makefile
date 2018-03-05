@@ -204,6 +204,33 @@ parse_map2.c.s:
 	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/parse_map2.c.s
 .PHONY : parse_map2.c.s
 
+play.o: play.c.o
+
+.PHONY : play.o
+
+# target to build an object file
+play.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/play.c.o
+.PHONY : play.c.o
+
+play.i: play.c.i
+
+.PHONY : play.i
+
+# target to preprocess a source file
+play.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/play.c.i
+.PHONY : play.c.i
+
+play.s: play.c.s
+
+.PHONY : play.s
+
+# target to generate assembly for a file
+play.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/play.c.s
+.PHONY : play.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... parse_map2.o"
 	@echo "... parse_map2.i"
 	@echo "... parse_map2.s"
+	@echo "... play.o"
+	@echo "... play.i"
+	@echo "... play.s"
 .PHONY : help
 
 

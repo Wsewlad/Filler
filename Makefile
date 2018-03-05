@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME	=	vfil.filler
-SRC		=	main.c parse_map.c parse_map2.c
+SRC		=	main.c parse_map.c parse_map2.c play.c
 FLAGS	=	-Wall -Werror -Wextra
 MYLIB	=	-L libft -lftprintf -I libft
 

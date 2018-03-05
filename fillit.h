@@ -35,6 +35,10 @@ typedef struct	s_param
 	t_map		map;
 	t_piece		piece;
 	int 		plr;
+	int 		enemy;
+	int 		res_x;
+	int 		res_y;
+	int 		end;
 }				t_param;
 
 void			parse_map(t_param *param);
@@ -44,5 +48,9 @@ void			parse_mline(t_param *param, int *i);
 void			parse_pline(t_param *param, int *i);
 void			create_piece(t_param *param);
 void			free_piece(t_param *param);
+void			gnl_continue(void);
+void			play(t_param *param);
+
+void			print_map(t_param param);
 
 #endif
