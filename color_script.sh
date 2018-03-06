@@ -1,10 +1,12 @@
-gren=$(printf "\033[32mO\033[0m")
-yel=$(printf "\033[35mX\033[0m")
-grens=$(printf "\033[36mo\033[0m")
-yel2=$(printf "\033[33mx\033[0m")
+lblue=$(printf "\e[94mO\e[0m")
+lgray=$(printf "\e[37mX\e[0m")
+white=$(printf "\e[97mo\e[0m")
+lyel=$(printf "\e[93mx\e[0m")
+dark=$(printf "\e[90m\.\e[0m")
 
-sed "s|O|$gren|g" |
-sed "s|X|$yel|g" |
-sed "s|x|$yel2|g" |
-sed "/^0.. /s|o|$grens|g" |
+sed "s|O|$lblue|g" |
+sed "s|X|$lgray|g" |
+sed "s|x|$lyel|g" |
+sed "s|\.|$dark|g" |
+sed "/^0.. /s|o|$white|g" |
 sed "s|fin|player|g"

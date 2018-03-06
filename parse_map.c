@@ -65,8 +65,8 @@ void	gnl_continue(void)
 {
 	char	*line;
 
-	if (get_next_line(0, &line) > 0)
-		ft_strdel(&line);
+	get_next_line(0, &line);
+	ft_strdel(&line);
 }
 
 void	parse_mline(t_param *param, int *i)

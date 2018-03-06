@@ -30,15 +30,28 @@ typedef struct	s_piece
 	int 		**p;
 }				t_piece;
 
+typedef struct	s_var
+{
+	int			i;
+	int			j;
+	int			k;
+}				t_var;
+
+typedef struct	s_coord
+{
+	int 		x;
+	int 		y;
+}				t_coord;
+
 typedef struct	s_param
 {
 	t_map		map;
 	t_piece		piece;
 	int 		plr;
 	int 		enemy;
-	int 		res_x;
-	int 		res_y;
-	int 		end;
+	t_coord 	*crd;
+	int 		nb;
+	t_coord		play;
 }				t_param;
 
 void			parse_map(t_param *param);
