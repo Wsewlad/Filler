@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Filler.dir/parse_map.c.o"
   "CMakeFiles/Filler.dir/parse_map2.c.o"
   "CMakeFiles/Filler.dir/play.c.o"
+  "CMakeFiles/Filler.dir/find_enemy.c.o"
   "Filler.pdb"
   "Filler"
 )

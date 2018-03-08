@@ -123,6 +123,33 @@ Filler/fast:
 	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/build
 .PHONY : Filler/fast
 
+find_enemy.o: find_enemy.c.o
+
+.PHONY : find_enemy.o
+
+# target to build an object file
+find_enemy.c.o:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/find_enemy.c.o
+.PHONY : find_enemy.c.o
+
+find_enemy.i: find_enemy.c.i
+
+.PHONY : find_enemy.i
+
+# target to preprocess a source file
+find_enemy.c.i:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/find_enemy.c.i
+.PHONY : find_enemy.c.i
+
+find_enemy.s: find_enemy.c.s
+
+.PHONY : find_enemy.s
+
+# target to generate assembly for a file
+find_enemy.c.s:
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/find_enemy.c.s
+.PHONY : find_enemy.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Filler"
+	@echo "... find_enemy.o"
+	@echo "... find_enemy.i"
+	@echo "... find_enemy.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

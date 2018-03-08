@@ -12,14 +12,14 @@
 
 #include "fillit.h"
 
-int 	check_plr_enemy(t_param *param, t_var *v, int mi, int mj)
+int		check_plr_enemy(t_param *param, t_var *v, int mi, int mj)
 {
 	if (param->map.m[v->i + mi][v->j + mj] == param->piece.p[v->i][v->j]
 		&& param->map.m[v->i + mi][v->j + mj] == param->plr)
 		v->k++;
-	if (param->map.m[v->i + mi][v->j + mj] == param->enemy)
+	if (param->map.m[v->i + mi][v->j + mj] == param->enemy && \
+		param->piece.p[v->i][v->j] == param->plr)
 		return (0);
-
 	return (1);
 }
 
@@ -58,10 +58,10 @@ void	count_set_place(t_param *param, int itr)
 
 	iter = itr;
 	i = 0;
-	while (i < param->map.size_y - param->piece.size_y)
+	while (i < param->map.size_y - param->piece.size_y + 1)
 	{
 		j = 0;
-		while (j < param->map.size_x - param->piece.size_x)
+		while (j < param->map.size_x - param->piece.size_x + 1)
 		{
 			check_pset(param, i, j, &iter);
 			j++;
@@ -84,4 +84,12 @@ void	play(t_param *param)
 		return ;
 	}
 	count_set_place(param, 0);
+	if (!(param->iter % 3))
+	{
+		param->play.x = param->crd[0].x;
+		param->play.y = param->crd[0].y;
+		param->iter++;
+	}
+	else
+		find_enemy(param);
 }

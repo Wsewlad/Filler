@@ -10,3 +10,4 @@ sed "s|x|$lyel|g" |
 sed "s|\.|$dark|g" |
 sed "/^0.. /s|o|$white|g" |
 sed "s|fin|player|g"
+say "boom!"

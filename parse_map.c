@@ -12,9 +12,9 @@
 
 #include "fillit.h"
 
-void 	whoami(t_param *param)
+void	whoami(t_param *param)
 {
-	char *line;
+	char	*line;
 
 	get_next_line(0, &line);
 	param->plr = line[10] - '0';
@@ -29,22 +29,24 @@ void	parse_map(t_param *param)
 	if (!param->map.created)
 		create_map(param);
 	else
-		gnl_continue();
-	gnl_continue();
+		gnl_continue(param);
+	gnl_continue(param);
 	i = 0;
 	while (i < param->map.size_y)
 		parse_mline(param, &i);
+	if (!param->pos)
+		check_start_pos(param);
 	create_piece(param);
 	i = 0;
 	while (i < param->piece.size_y)
 		parse_pline(param, &i);
 }
 
-void 	create_map(t_param *param)
+void	create_map(t_param *param)
 {
 	char	*buf;
-	char 	*line;
-	int 	i;
+	char	*line;
+	int		i;
 
 	get_next_line(0, &line);
 	buf = line;
@@ -61,19 +63,21 @@ void 	create_map(t_param *param)
 	param->map.created = 1;
 }
 
-void	gnl_continue(void)
+void	gnl_continue(t_param *param)
 {
 	char	*line;
 
 	get_next_line(0, &line);
+	if (ft_strstr(line, "==") || ft_strstr(line, "[-1, -1]"))
+		param->stop = 1;
 	ft_strdel(&line);
 }
 
 void	parse_mline(t_param *param, int *i)
 {
 	char	*line;
-	char 	*buf;
-	int 	j;
+	char	*buf;
+	int		j;
 
 	line = NULL;
 	get_next_line(0, &line);

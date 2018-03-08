@@ -40,8 +40,6 @@ OSRC   =   $(SRC:.c=.o)
 
 LOSRC	=	$(LSRC:.c=.o)
 
-MAKE	=	@make
-
 FLAGS	=	-Wall -Wextra -Werror
 
 .PHONY: all clean fclean re
@@ -60,6 +58,4 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re:
-	$(MAKE) fclean
-	$(MAKE) all
+re: fclean all

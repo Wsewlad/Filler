@@ -87,6 +87,9 @@
 		<Unit filename="/Users/vfil/CLionProjects/Filler/fillit.h">
 			<Option target="Filler"/>
 		</Unit>
+		<Unit filename="/Users/vfil/CLionProjects/Filler/find_enemy.c">
+			<Option target="Filler"/>
+		</Unit>
 		<Unit filename="/Users/vfil/CLionProjects/Filler/main.c">
 			<Option target="Filler"/>
 		</Unit>
