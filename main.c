@@ -54,6 +54,6 @@ int		main(void)
 		if (param.nb > 0)
 			print_res(&param);
 	}
-	ft_printf("%d %d\n", -1, -1);
+	ft_printf("%d %d\n", 0, 0);
 	return (0);
 }

@@ -17,9 +17,12 @@ void	whoami(t_param *param)
 	char	*line;
 
 	get_next_line(0, &line);
-	param->plr = line[10] - '0';
-	param->enemy = param->plr == 1 ? 2 : 1;
-	ft_strdel(&line);
+	if (line)
+	{
+		param->plr = line[10] - '0';
+		param->enemy = param->plr == 1 ? 2 : 1;
+		ft_strdel(&line);
+	}
 }
 
 void	parse_map(t_param *param)
@@ -29,8 +32,8 @@ void	parse_map(t_param *param)
 	if (!param->map.created)
 		create_map(param);
 	else
-		gnl_continue(param);
-	gnl_continue(param);
+		gnl_continue();
+	gnl_continue();
 	i = 0;
 	while (i < param->map.size_y)
 		parse_mline(param, &i);
@@ -48,29 +51,33 @@ void	create_map(t_param *param)
 	char	*line;
 	int		i;
 
+	line = NULL;
 	get_next_line(0, &line);
-	buf = line;
-	buf += 8;
-	param->map.size_y = ft_atoi(buf);
-	while (ft_isalnum(*buf))
-		buf++;
-	param->map.size_x = ft_atoi(buf);
-	ft_strdel(&line);
-	param->map.m = (int**)malloc(sizeof(int*) * param->map.size_y);
-	i = 0;
-	while (i < param->map.size_y)
-		param->map.m[i++] = (int*)malloc(sizeof(int) * param->map.size_x);
-	param->map.created = 1;
+	if (line)
+	{
+		buf = line;
+		buf += 8;
+		param->map.size_y = ft_atoi(buf);
+		while (ft_isalnum(*buf))
+			buf++;
+		param->map.size_x = ft_atoi(buf);
+		ft_strdel(&line);
+		param->map.m = (int**)malloc(sizeof(int*) * param->map.size_y);
+		i = 0;
+		while (i < param->map.size_y)
+			param->map.m[i++] = (int*)malloc(sizeof(int) * param->map.size_x);
+		param->map.created = 1;
+	}
 }
 
-void	gnl_continue(t_param *param)
+void	gnl_continue(void)
 {
 	char	*line;
 
+	line = NULL;
 	get_next_line(0, &line);
-	if (ft_strstr(line, "==") || ft_strstr(line, "[-1, -1]"))
-		param->stop = 1;
-	ft_strdel(&line);
+	if (line)
+		ft_strdel(&line);
 }
 
 void	parse_mline(t_param *param, int *i)
@@ -81,19 +88,21 @@ void	parse_mline(t_param *param, int *i)
 
 	line = NULL;
 	get_next_line(0, &line);
-	buf = line + 4;
-	j = 0;
-	while (j < param->map.size_x)
-	{
-		if (buf[j] == 'O' || buf[j] == 'o')
-			param->map.m[*i][j] = 1;
-		else if (buf[j] == 'X' || buf[j] == 'x')
-			param->map.m[*i][j] = 2;
-		else
-			param->map.m[*i][j] = 0;
-		j++;
-	}
-	(*i)++;
 	if (line)
+	{
+		buf = line + 4;
+		j = 0;
+		while (j < param->map.size_x)
+		{
+			if (buf[j] == 'O' || buf[j] == 'o')
+				param->map.m[*i][j] = 1;
+			else if (buf[j] == 'X' || buf[j] == 'x')
+				param->map.m[*i][j] = 2;
+			else
+				param->map.m[*i][j] = 0;
+			j++;
+		}
+		(*i)++;
 		ft_strdel(&line);
+	}
 }

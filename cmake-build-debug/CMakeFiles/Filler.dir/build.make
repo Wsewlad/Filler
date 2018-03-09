@@ -177,13 +177,138 @@ CMakeFiles/Filler.dir/find_enemy.c.o.provides: CMakeFiles/Filler.dir/find_enemy.
 CMakeFiles/Filler.dir/find_enemy.c.o.provides.build: CMakeFiles/Filler.dir/find_enemy.c.o
 
 
+CMakeFiles/Filler.dir/vis_parser.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/vis_parser.c.o: ../vis_parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfil/CLionProjects/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Filler.dir/vis_parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/vis_parser.c.o   -c /Users/vfil/CLionProjects/Filler/vis_parser.c
+
+CMakeFiles/Filler.dir/vis_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/vis_parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfil/CLionProjects/Filler/vis_parser.c > CMakeFiles/Filler.dir/vis_parser.c.i
+
+CMakeFiles/Filler.dir/vis_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/vis_parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfil/CLionProjects/Filler/vis_parser.c -o CMakeFiles/Filler.dir/vis_parser.c.s
+
+CMakeFiles/Filler.dir/vis_parser.c.o.requires:
+
+.PHONY : CMakeFiles/Filler.dir/vis_parser.c.o.requires
+
+CMakeFiles/Filler.dir/vis_parser.c.o.provides: CMakeFiles/Filler.dir/vis_parser.c.o.requires
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/vis_parser.c.o.provides.build
+.PHONY : CMakeFiles/Filler.dir/vis_parser.c.o.provides
+
+CMakeFiles/Filler.dir/vis_parser.c.o.provides.build: CMakeFiles/Filler.dir/vis_parser.c.o
+
+
+CMakeFiles/Filler.dir/vis_parser2.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/vis_parser2.c.o: ../vis_parser2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfil/CLionProjects/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Filler.dir/vis_parser2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/vis_parser2.c.o   -c /Users/vfil/CLionProjects/Filler/vis_parser2.c
+
+CMakeFiles/Filler.dir/vis_parser2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/vis_parser2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfil/CLionProjects/Filler/vis_parser2.c > CMakeFiles/Filler.dir/vis_parser2.c.i
+
+CMakeFiles/Filler.dir/vis_parser2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/vis_parser2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfil/CLionProjects/Filler/vis_parser2.c -o CMakeFiles/Filler.dir/vis_parser2.c.s
+
+CMakeFiles/Filler.dir/vis_parser2.c.o.requires:
+
+.PHONY : CMakeFiles/Filler.dir/vis_parser2.c.o.requires
+
+CMakeFiles/Filler.dir/vis_parser2.c.o.provides: CMakeFiles/Filler.dir/vis_parser2.c.o.requires
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/vis_parser2.c.o.provides.build
+.PHONY : CMakeFiles/Filler.dir/vis_parser2.c.o.provides
+
+CMakeFiles/Filler.dir/vis_parser2.c.o.provides.build: CMakeFiles/Filler.dir/vis_parser2.c.o
+
+
+CMakeFiles/Filler.dir/vis_printer.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/vis_printer.c.o: ../vis_printer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfil/CLionProjects/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Filler.dir/vis_printer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/vis_printer.c.o   -c /Users/vfil/CLionProjects/Filler/vis_printer.c
+
+CMakeFiles/Filler.dir/vis_printer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/vis_printer.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfil/CLionProjects/Filler/vis_printer.c > CMakeFiles/Filler.dir/vis_printer.c.i
+
+CMakeFiles/Filler.dir/vis_printer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/vis_printer.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfil/CLionProjects/Filler/vis_printer.c -o CMakeFiles/Filler.dir/vis_printer.c.s
+
+CMakeFiles/Filler.dir/vis_printer.c.o.requires:
+
+.PHONY : CMakeFiles/Filler.dir/vis_printer.c.o.requires
+
+CMakeFiles/Filler.dir/vis_printer.c.o.provides: CMakeFiles/Filler.dir/vis_printer.c.o.requires
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/vis_printer.c.o.provides.build
+.PHONY : CMakeFiles/Filler.dir/vis_printer.c.o.provides
+
+CMakeFiles/Filler.dir/vis_printer.c.o.provides.build: CMakeFiles/Filler.dir/vis_printer.c.o
+
+
+CMakeFiles/Filler.dir/visualizer.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/visualizer.c.o: ../visualizer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfil/CLionProjects/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Filler.dir/visualizer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/visualizer.c.o   -c /Users/vfil/CLionProjects/Filler/visualizer.c
+
+CMakeFiles/Filler.dir/visualizer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/visualizer.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfil/CLionProjects/Filler/visualizer.c > CMakeFiles/Filler.dir/visualizer.c.i
+
+CMakeFiles/Filler.dir/visualizer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/visualizer.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfil/CLionProjects/Filler/visualizer.c -o CMakeFiles/Filler.dir/visualizer.c.s
+
+CMakeFiles/Filler.dir/visualizer.c.o.requires:
+
+.PHONY : CMakeFiles/Filler.dir/visualizer.c.o.requires
+
+CMakeFiles/Filler.dir/visualizer.c.o.provides: CMakeFiles/Filler.dir/visualizer.c.o.requires
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/visualizer.c.o.provides.build
+.PHONY : CMakeFiles/Filler.dir/visualizer.c.o.provides
+
+CMakeFiles/Filler.dir/visualizer.c.o.provides.build: CMakeFiles/Filler.dir/visualizer.c.o
+
+
+CMakeFiles/Filler.dir/vis_printer2.c.o: CMakeFiles/Filler.dir/flags.make
+CMakeFiles/Filler.dir/vis_printer2.c.o: ../vis_printer2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfil/CLionProjects/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Filler.dir/vis_printer2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Filler.dir/vis_printer2.c.o   -c /Users/vfil/CLionProjects/Filler/vis_printer2.c
+
+CMakeFiles/Filler.dir/vis_printer2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Filler.dir/vis_printer2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfil/CLionProjects/Filler/vis_printer2.c > CMakeFiles/Filler.dir/vis_printer2.c.i
+
+CMakeFiles/Filler.dir/vis_printer2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Filler.dir/vis_printer2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfil/CLionProjects/Filler/vis_printer2.c -o CMakeFiles/Filler.dir/vis_printer2.c.s
+
+CMakeFiles/Filler.dir/vis_printer2.c.o.requires:
+
+.PHONY : CMakeFiles/Filler.dir/vis_printer2.c.o.requires
+
+CMakeFiles/Filler.dir/vis_printer2.c.o.provides: CMakeFiles/Filler.dir/vis_printer2.c.o.requires
+	$(MAKE) -f CMakeFiles/Filler.dir/build.make CMakeFiles/Filler.dir/vis_printer2.c.o.provides.build
+.PHONY : CMakeFiles/Filler.dir/vis_printer2.c.o.provides
+
+CMakeFiles/Filler.dir/vis_printer2.c.o.provides.build: CMakeFiles/Filler.dir/vis_printer2.c.o
+
+
 # Object files for target Filler
 Filler_OBJECTS = \
 "CMakeFiles/Filler.dir/main.c.o" \
 "CMakeFiles/Filler.dir/parse_map.c.o" \
 "CMakeFiles/Filler.dir/parse_map2.c.o" \
 "CMakeFiles/Filler.dir/play.c.o" \
-"CMakeFiles/Filler.dir/find_enemy.c.o"
+"CMakeFiles/Filler.dir/find_enemy.c.o" \
+"CMakeFiles/Filler.dir/vis_parser.c.o" \
+"CMakeFiles/Filler.dir/vis_parser2.c.o" \
+"CMakeFiles/Filler.dir/vis_printer.c.o" \
+"CMakeFiles/Filler.dir/visualizer.c.o" \
+"CMakeFiles/Filler.dir/vis_printer2.c.o"
 
 # External object files for target Filler
 Filler_EXTERNAL_OBJECTS =
@@ -193,9 +318,14 @@ Filler: CMakeFiles/Filler.dir/parse_map.c.o
 Filler: CMakeFiles/Filler.dir/parse_map2.c.o
 Filler: CMakeFiles/Filler.dir/play.c.o
 Filler: CMakeFiles/Filler.dir/find_enemy.c.o
+Filler: CMakeFiles/Filler.dir/vis_parser.c.o
+Filler: CMakeFiles/Filler.dir/vis_parser2.c.o
+Filler: CMakeFiles/Filler.dir/vis_printer.c.o
+Filler: CMakeFiles/Filler.dir/visualizer.c.o
+Filler: CMakeFiles/Filler.dir/vis_printer2.c.o
 Filler: CMakeFiles/Filler.dir/build.make
 Filler: CMakeFiles/Filler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vfil/CLionProjects/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Filler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vfil/CLionProjects/Filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Filler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Filler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +338,11 @@ CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/parse_map.c.o.requires
 CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/parse_map2.c.o.requires
 CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/play.c.o.requires
 CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/find_enemy.c.o.requires
+CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/vis_parser.c.o.requires
+CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/vis_parser2.c.o.requires
+CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/vis_printer.c.o.requires
+CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/visualizer.c.o.requires
+CMakeFiles/Filler.dir/requires: CMakeFiles/Filler.dir/vis_printer2.c.o.requires
 
 .PHONY : CMakeFiles/Filler.dir/requires
 

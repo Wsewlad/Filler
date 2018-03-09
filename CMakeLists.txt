@@ -24,4 +24,5 @@ set(ft_arriter.c ft_atoi.c ft_bzero.c ft_chrjoin_free.c ft_isalnum.c
         prntf_chrstr.c prntf_numb.c prntf_unicode.c prntf_unicode2.c ulltoa_base_buf.c
         )
 
-add_executable(Filler main.c parse_map.c parse_map2.c play.c fillit.h find_enemy.c)
+add_executable(Filler main.c parse_map.c parse_map2.c play.c fillit.h find_enemy.c
+        vis_parser.c vis_parser2.c vis_printer.c visualizer.c vis_printer2.c)

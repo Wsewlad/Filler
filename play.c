@@ -84,7 +84,7 @@ void	play(t_param *param)
 		return ;
 	}
 	count_set_place(param, 0);
-	if (!(param->iter % 3))
+	if (!(param->iter % 2))
 	{
 		param->play.x = param->crd[0].x;
 		param->play.y = param->crd[0].y;

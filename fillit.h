@@ -14,6 +14,7 @@
 # define FILLIT_H
 
 # include "libft.h"
+# include <mlx.h>
 # define ABS(x) (x < 0 ? -x : x)
 
 typedef struct	s_map
@@ -48,9 +49,14 @@ typedef struct	s_vsl
 {
 	int			win_x;
 	int			win_y;
+	int			img_x;
+	int			img_y;
 	void		*mlx_ptr;
 	void		*win_ptr;
 	void		*img_ptr;
+	t_coord		res;
+	int			stop;
+	int			scale;
 }				t_vsl;
 
 typedef struct	s_param
@@ -66,7 +72,6 @@ typedef struct	s_param
 	int			pos;
 	int			iter;
 	t_vsl		vsl;
-	int 		stop;
 }				t_param;
 
 void			parse_map(t_param *param);
@@ -76,7 +81,7 @@ void			parse_mline(t_param *param, int *i);
 void			parse_pline(t_param *param, int *i);
 void			create_piece(t_param *param);
 void			free_piece(t_param *param);
-void			gnl_continue(t_param *param);
+void			gnl_continue();
 void			play(t_param *param);
 void			find_enemy(t_param *param);
 void			check_piece_len(t_param *param, int *min, int px, int py);
@@ -87,5 +92,16 @@ void			check_pset(t_param *param, int mi, int mj, int *iter);
 int				check_plr_enemy(t_param *param, t_var *v, int mi, int mj);
 void			check_start_pos(t_param *param);
 void			print_map(t_param param);
+void			put_pixel_to_image(t_param *param, int x, int y, int color);
+void			visualizer(t_param *param);
+void			vis_parse_mline(t_param *param, int *i);
+void			vis_create_map(t_param *param);
+void			vis_parse(t_param *param);
+void			set_plr_numb(t_param *param, int *i, int j, char *buf);
+void			check_fin(t_param *param, char *line);
+void			set_scale(t_param *param);
+void			print_score(t_param *param);
+void			print_lines(t_param *param);
+void			print_name(t_param *param);
 
 #endif

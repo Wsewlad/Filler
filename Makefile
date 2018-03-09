@@ -12,6 +12,7 @@
 
 NAME	=	vfil.filler
 SRC		=	main.c parse_map.c parse_map2.c play.c find_enemy.c
+VISUAL	=	visualizer.c vis_parser.c vis_printer.c vis_parser2.c vis_printer2.c
 FLAGS	=	-Wall -Werror -Wextra
 MYLIB	=	-L libft -lftprintf -I libft
 MLX		=	-I /usr/local/include -L /usr/local/lib/ -lmlx -framework OpenGL -framework AppKit
@@ -19,12 +20,12 @@ MLX		=	-I /usr/local/include -L /usr/local/lib/ -lmlx -framework OpenGL -framewo
 .PHONY: all clean fclean re
 all: $(NAME)
 
-$(NAME): $(SRC) visualizer.c
+$(NAME): $(SRC) $(VISUAL)
 	make -C libft/
 	gcc -o $(NAME) $(FLAG) $(SRC) $(MYLIB)
 	@printf "\e[94mFiller is compiled!\n\e[0m"
 	@say "Filler is compiled!"
-	gcc -o visualizer $(FLAG) visualizer.c parse_map.c parse_map2.c $(MYLIB) $(MLX)
+	gcc -o visualizer $(FLAG) $(VISUAL) $(MYLIB) $(MLX)
 
 clean:
 	@rm -f *.o

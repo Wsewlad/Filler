@@ -102,6 +102,21 @@
 		<Unit filename="/Users/vfil/CLionProjects/Filler/play.c">
 			<Option target="Filler"/>
 		</Unit>
+		<Unit filename="/Users/vfil/CLionProjects/Filler/vis_parser.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/vfil/CLionProjects/Filler/vis_parser2.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/vfil/CLionProjects/Filler/vis_printer.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/vfil/CLionProjects/Filler/vis_printer2.c">
+			<Option target="Filler"/>
+		</Unit>
+		<Unit filename="/Users/vfil/CLionProjects/Filler/visualizer.c">
+			<Option target="Filler"/>
+		</Unit>
 		<Unit filename="/Users/vfil/CLionProjects/Filler/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
